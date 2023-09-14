@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Todo from './Todo'
+import Name from './Name'
 
-function App() {
+const App = () => {
+
+  // const addCount = () => {
+    
+  //   setCount(count+1);
+  //   // count += 1;
+  //   console.log(count);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+     <div>
+      {/*{count} <button onClick={addCount}>카운트 증가</button> */}
+      <Name title="이름 적기"/>
+      <Todo title="오늘 할일"/>
 
-export default App;
+    </div>
+  )
+  }
+
+export default App
