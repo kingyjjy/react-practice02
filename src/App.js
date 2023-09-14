@@ -1,23 +1,9 @@
 import React from 'react'
-import Todo from './Todo'
-import Name from './Name'
+import Home from './layout/Home' 
 
 const App = () => {
-
-  // const addCount = () => {
-    
-  //   setCount(count+1);
-  //   // count += 1;
-  //   console.log(count);
-  
-  return (
-     <div>
-      {/*{count} <button onClick={addCount}>카운트 증가</button> */}
-      <Name title="이름 적기"/>
-      <Todo title="오늘 할일"/>
-
-    </div>
-  )
+ 
+  return (<Home/>)
   }
 
 export default App
